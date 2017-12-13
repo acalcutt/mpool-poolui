@@ -17,15 +17,15 @@ html, body {
 
 a {
   transition: color .4s;
-  color: rgb(0, 130, 130); 
+  color: #3287b3; 
 }
 
 a:link { text-decoration: none; },
-a:visited { color: rgb(255, 160, 0); } 
-a:hover   { color: rgb(255, 160, 0); }
+a:visited { color: #3b98c8; } 
+a:hover   { color: #3b98c8; }
 a:active  {
   transition: color .3s;
-  color: rgb(204, 122, 0);
+  color: #007BE6;
 }
 
  .panel-subtitle {
@@ -55,7 +55,7 @@ md-sidenav {
 }
 
 md-toolbar {
-	background-color: rgb(0, 130, 130) !important;
+	background-color: #3287b3 !important;
 	font-size: 14px;
 }
 
@@ -64,16 +64,15 @@ md-toolbar {
 }
 
 .material-icons {
-	color: rgb(255, 160, 0);
+	color: #3b98c8;
 }
 
 #main {
-  background: rgb(240, 240, 240); 
+  background: #f3f5f7; 
 }
 
 .maintoolbar {
-  background-color: rgb(0, 130, 130); 
-  color: rgb(255, 255, 255);
+  background-color: #fff;
  }
 
 .maintoolbar span {
@@ -89,7 +88,7 @@ md-toolbar {
 }
 
 .md-menu-toolbar {
-  background: rgb(0, 130, 130);
+  background: #00796B;
 }
 
 .md-title {
@@ -250,7 +249,7 @@ md-tooltip .md-content {
   -webkit-transform: scale(0.60);
   -moz-transform:scale(0.60);
   font-size: 64px !important;
-  color: rgb(255, 160, 0);
+  color: #3b98c8;
 }
 
 .valid {

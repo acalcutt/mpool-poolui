@@ -27,13 +27,13 @@ app.controller('GettingStartedCtrl', function($scope, $mdDialog, dataService) {
 	$scope.samples=[
 	{
 		type: 'Username',
-		sample: '43To46Y9AxNFkY5rsMQaLwbRNaxLZVvc4LJZt7Cx9Dt23frL6aut2uC3PsMiwGY5C5fKLSn6sWyoxRQTK1dhdBpKAX8bsUW',
+		sample: '4B5rfHVYF7R8ag71iamrFSddbV5wAN97BG5W5VsVqPJMLML9hugBngDGwVPNZYKGPqNtoz1eJYhFWEnBCpgt4cJUG8xBPB1',
 		desc: 'Standard wallet address (Monero CLI wallet/Monero GUI wallet/MyMonero wallet)',
 		valid: true
 	},
 	{
 		type: 'Username',
-		sample: '43To46Y9AxNFkY5rsMQaLwbRNaxLZVvc4LJZt7Cx9Dt23frL6aut2uC3PsMiwGY5C5fKLSn6sWyoxRQTK1dhdBpKAX8bsUW+3500',
+		sample: '4B5rfHVYF7R8ag71iamrFSddbV5wAN97BG5W5VsVqPJMLML9hugBngDGwVPNZYKGPqNtoz1eJYhFWEnBCpgt4cJUG8xBPB1+3500',
 		desc: 'Standard wallet address with fixed difficulty of 3500 for the worker',
 		valid: true
 	},
@@ -45,7 +45,7 @@ app.controller('GettingStartedCtrl', function($scope, $mdDialog, dataService) {
 	},
 	{
 		type: 'Username',
-		sample: '43To46Y9AxNFkY5rsMQaLwbRNaxLZVvc4LJZt7Cx9Dt23frL6aut2uC3PsMiwGY5C5fKLSn6sWyoxRQTK1dhdBpKAX8bsUW.6FEBAC2C05EDABB16E451D824894CC48AE8B645A48BD4C4F21A1CC8624EB0E6F',
+		sample: '4B5rfHVYF7R8ag71iamrFSddbV5wAN97BG5W5VsVqPJMLML9hugBngDGwVPNZYKGPqNtoz1eJYhFWEnBCpgt4cJUG8xBPB1.6FEBAC2C05EDABB16E451D824894CC48AE8B645A48BD4C4F21A1CC8624EB0E6F',
 		desc: 'Standard address with paymentID, good for withdrawing to an exchange that does not use an integrated address, or if you want to use a specific paymentID',
 		valid: true
 	},
