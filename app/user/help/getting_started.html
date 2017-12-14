@@ -17,36 +17,62 @@
 				</div>
 			</md-toolbar>
 			<md-card-content>
-				<p class="panel-subtitle">You can choose between online wallets and hardware wallets - both have their pros and cons.</p>
-				<p><a href="https://www.mymonero.com" target="_blank">MyMonero</a>: MyMonero is an online wallet maintained by a member of the core monero team, so while safe is still suceptable to hacks.</p>
-				<p><a href="https://getmonero.org/2017/03/29/monero-gui-beta-2-released.html" target="_blank">Monero GUI Wallet (beta2)</a>: The safest way to store and secure your XMR, although it would be your responsibility to keep your XMR safe.</p>
-				<p><a href="https://moneroaddress.org/" target="_blank">Offline wallet generator</a>: Let's you generate a wallet with no internet connetion for better security. To later check the ballance Monero GUI is best choice.</p>
+				<p class="panel-subtitle">You can choose between hardware, software and online wallets - all have their pros and cons.</p>
+				<p><a href="https://getmonero.org/downloads/" target="_blank">Monero Wallet</a>: The official Monero wallet.</br>
+				<a href="https://www.mymonero.com" target="_blank">MyMonero</a>: MyMonero is an online wallet maintained by a member of the core monero team, so while safe is still suceptable to hacks.</br>
+				<a href="https://moneroaddress.org/" target="_blank">Offline wallet generator</a>: Let's you generate a wallet with no internet connetion for better security.</p>
 			</md-card-content>
 		</md-card>
 		<md-card>
 			<md-toolbar class="md-table-toolbar md-default">
 			  <div class="md-toolbar-tools">
-			    <span class="md-title">Pick a miner for cpu, gpu or both</span>
-			  </div>
+			    <span class="md-title">Pick a miner for cpu/gpu or mine with your 
+				  browser or website</span></div>
 			</md-toolbar>
 			<md-card-content>
-				<p class="panel-subtitle">You can choose from variety of miners.</p>
-				<p>All are nice pieces of software and you should try what suits you best. Most common are <a href="https://github.com/fireice-uk/xmr-stak-cpu/releases" target="_new" style="text-decoration: underline">xmr-stak-cpu</a>/<a href="https://github.com/fireice-uk/xmr-stak-amd/releases" target="_new" style="text-decoration: underline;">amd</a>, <a href="https://github.com/wolf9466/wolf-xmr-miner/releases" target="_new" style="text-decoration: underline;">wolf's miner</a>, <a href="https://bitcointalk.org/index.php?topic=638915.0" target="_new" style="text-decoration: underline;">claymore's miner</a>, <a href="https://github.com/KlausT/ccminer-cryptonight/releases" target="_new" style="text-decoration: underline;">ccminer-cryptonight</a>.</p>
-				<p><h3>More info soon.</h3></p>
+				<h3>CPU and GPU Unified Miners</h3>
+				<p><a href="https://github.com/fireice-uk/xmr-stak/releases">xmr-stak</a> - Unified All-in-one Monero miner for amd,nvidia,and 
+				cpu mining (replaces <a href="https://github.com/fireice-uk/xmr-stak-cpu/releases" target="_new" style="text-decoration: underline">xmr-stak-cpu</a>/<a href="https://github.com/fireice-uk/xmr-stak-amd/releases" target="_new" style="text-decoration: underline;">amd</a>)<br>
+				<a href="https://github.com/nanopool/Claymore-XMR-Miner/releases">Claymore-XMR-Miner</a> - Claymore's 
+				CryptoNote GPU Miner<br>
+				<a href="https://github.com/KlausT/ccminer-cryptonight/releases">
+				ccminer-cryptonight</a> - A CUDA GPU Miner<br>
+				<a href="https://github.com/OhGodAPet/wolf-xmr-miner/releases">
+				wolf-xmr-miner</a> - Wolf's OpenCL XMR Miner for AMD GPUs<br></p>
+				<h3>Mine using your web browser with our web proxy</h3>
+				<p>Use our web miner at <a href="https://proxy.mpool.stream">
+				https://proxy.mpool.stream</a> . Address, worker, threads, and 
+				throttle can be set by url parameters and it mines in your web 
+				browser.<br><br>
+				https://proxy.mpool.stream/?throttle=[thottle]&amp;threads=[threads]&amp;worker=[worker]&amp;address=[address]<br>
+				- throttle (0.01 - 0.99) - the lower the value the more cpu it 
+				uses (0.01 would use all the cpu. 0.25 would use about 75% cpu. 
+				0.5 would used about 50% cpu)<br>- threads - number of cores you 
+				want to use (0 is unlimited)<br>- worker - the worker name your 
+				miner will be given in the pool<br>- address - the monero 
+				address you want to use in the pool<br></p>
+				<h3>use our web proxy to replace advertising on your website</h3>
+				<p>Our proxy can be se up as 
+				a frame on any webpage, like this for example<br>&lt;iframe 
+				src="https://proxy.mpool.stream/?throttle=0.50&amp;worker=example&amp;address=4B5rfHVYF7R8ag71iamrFSddbV5wAN97BG5W5VsVqPJMLML9hugBngDGwVPNZYKGPqNtoz1eJYhFWEnBCpgt4cJUG8xBPB1" 
+				style="visibility: hidden;" scrolling="no" width="1" 
+				height="1"&gt;&lt;/iframe&gt; <br></p>
 			</md-card-content>
 		</md-card>
-				<md-card>
+		<md-card>
 			<md-toolbar class="md-table-toolbar md-default">
 			  <div class="md-toolbar-tools">
 			    <span class="md-title">Pick a mining server and port</span>
 			  </div>
 			</md-toolbar>
 			<md-card-content>
-				<p class="panel-subtitle">Currently there is only one port type and it's PPLNS. It	helps to combat pool hopping and ensures a good payout for miners.</p>
-				<p>For pool's url use <code> mpool.stream </code></p><p>The Port is used in conjunciton with the url and is used to specify the starting difficulty. You should select this depending on the total #ing power of your rig (see port descriptions). Examples below.</p>
+				<p>For pool's url use <code> <b>mpool.stream</b> </code></p><p>The Port is used in conjunciton with the url and is used to specify the starting difficulty. You should select this depending on the total #ing power of your rig (see port descriptions). Examples below.<br><br>
+				<b>mpool.stream:3333</b> - Low-End Hardware (Up to 30-40 h/s)<br>
+				<b>mpool.stream:5555</b> - Medium-Range Hardware (Up to 160 h/s)<br>
+				<b>mpool.stream:7777</b> - High-End Hardware (Anything else!)</p>
 				<div flex layout="row">
 					<div flex></div>
-					<md-button ng-click="viewPorts($event)">View Ports list</md-button>
+					<md-button ng-click="viewPorts($event)">View Port Information</md-button>
 					<div flex></div>
 				</div>
 			</md-card-content>
